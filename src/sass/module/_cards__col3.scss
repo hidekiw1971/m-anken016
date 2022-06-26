@@ -16,3 +16,11 @@
   @include mq(xl) {
   }
 }
+
+.cards__col3 {
+  @include mq(md) {
+    // margin-bottom: rem(-48);
+  }
+  @include mq(xl) {
+  }
+}

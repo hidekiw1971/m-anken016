@@ -186,11 +186,54 @@ select::-ms-expand {
   text-align: center;
   -webkit-transition: 0.75s;
   transition: 0.75s;
+  position: relative;
+}
+.blog__title::after {
+  content: "Blog";
+  display: block;
+  color: #f9f871;
+  opacity: 0.27;
+  font-family: "Noto Serif JP", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  font-size: 3.125rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.44;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -87%);
+          transform: translate(-50%, -87%);
+  z-index: 1;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+@media screen and (min-width: 768px) {
+  .blog__title::after {
+    font-size: 6.875rem;
+    line-height: 1.436;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate(0%, -67%);
+            transform: translate(0%, -67%);
+    z-index: 0;
+  }
 }
 .blog__wrap {
-  padding: 0px 20px;
-  padding: 0rem 1.25rem;
+  padding-top: 50px;
+  padding-top: 3.125rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
   background-color: #111;
+}
+@media screen and (min-width: 768px) {
+  .blog__wrap {
+    padding-top: 4.4375rem;
+  }
 }
 .btn__wrap {
   padding-top: 10px;
@@ -253,8 +296,6 @@ select::-ms-expand {
   padding-left: 1.25rem;
   padding-bottom: 16px;
   padding-bottom: 1rem;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
 }
