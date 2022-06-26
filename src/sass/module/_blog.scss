@@ -1,0 +1,7 @@
+@use "global" as *;
+.blog {
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

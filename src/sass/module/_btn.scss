@@ -1,0 +1,10 @@
+@use "global" as *;
+.btn {
+  @include mq(md) {
+    display: block;
+    width: rem(360);
+    margin: 0 auto;
+  }
+  @include mq(xl) {
+  }
+}

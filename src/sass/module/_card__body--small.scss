@@ -1,0 +1,9 @@
+@use "global" as *;
+.card__body--small {
+  display: flex;
+  justify-content: space-between;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
