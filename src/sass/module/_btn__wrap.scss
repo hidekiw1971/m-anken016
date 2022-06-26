@@ -5,6 +5,7 @@
   background-color: #333;
   border: 1px solid #fff;
   @include mq(md) {
+    width: rem(360);
   }
   @include mq(xl) {
   }

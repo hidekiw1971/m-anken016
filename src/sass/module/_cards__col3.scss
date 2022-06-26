@@ -1,5 +1,6 @@
 @use "global" as *;
 .cards__col3 > .cards__item {
+  margin-bottom: rem(24);
   @include mq(md) {
     width: calc(100% / 3.127);
     margin-right: 2.02%;

@@ -243,11 +243,23 @@ select::-ms-expand {
   background-color: #333;
   border: 1px solid #fff;
 }
+@media screen and (min-width: 768px) {
+  .btn__wrap {
+    width: 22.5rem;
+  }
+}
 .btn__wrap p {
   color: #fff;
   text-align: center;
   -webkit-transition: 0.75s;
   transition: 0.75s;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    display: block;
+    width: 22.5rem;
+    margin: 0 auto;
+  }
 }
 .card__badge--text {
   position: absolute;
@@ -400,6 +412,10 @@ select::-ms-expand {
   width: 100%;
   height: 100%;
   background-color: #fff;
+}
+.cards__col3 > .cards__item {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .cards__col3 > .cards__item {
