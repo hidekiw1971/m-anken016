@@ -1,0 +1,14 @@
+@use "global" as *;
+.card__img {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  // transform: translateY(-50%);
+  transform: translatey(0);
+  transition: $slow;
+  object-fit: cover;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

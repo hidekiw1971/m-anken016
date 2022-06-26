@@ -1,0 +1,16 @@
+@use "global" as *;
+.blog__title {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: $normal;
+  font-size: rem(20);
+  letter-spacing: rem(2);
+  line-height: 1.45;
+  color: #fff;
+  text-align: center;
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

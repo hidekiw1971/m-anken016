@@ -1,0 +1,21 @@
+@use "global" as *;
+.btn__wrap {
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  background-color: #333;
+  border: 1px solid #fff;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.btn__wrap p {
+  color: #fff;
+  text-align: center;
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

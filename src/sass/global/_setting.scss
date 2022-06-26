@@ -12,7 +12,6 @@ $padding-pc: 25px;
 $padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
-
 ////////////////////
 // フォント設定
 ////////////////////
@@ -28,6 +27,7 @@ body {
 // フォントウェイト
 $regular: 300;
 $normal: 400;
+$normal500: 500;
 $bold: 700;
 
 ////////////////////
@@ -37,7 +37,6 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
 $white: #fff;
-
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -51,7 +50,6 @@ $breakpoints: (
   xl: 1440,
 );
 
-
 //メディアクエリー
 $mediaquerys: (
   sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
@@ -59,6 +57,9 @@ $mediaquerys: (
   lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
 );
+
+// 動きをゆっくりにする
+$slow: 0.75s;
 
 // @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
 @mixin mq($mediaquery: md) {
@@ -71,7 +72,6 @@ $mediaquerys: (
 @function rem($pixels) {
   @return math.div($pixels, 16) * 1rem;
 }
-
 
 ////////////////////
 // 非表示設定

@@ -1,0 +1,9 @@
+@use "global" as *;
+.blog__wrap {
+  padding: rem(0) rem(20);
+  background-color: #111;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
