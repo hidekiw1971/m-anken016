@@ -360,4 +360,25 @@ select::-ms-expand {
   height: 100%;
   background-color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .cards__col3 > .cards__item {
+    width: 31.9795330988%;
+    margin-right: 2.02%;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards__col3 > .cards__item:nth-of-type(3n) {
+    margin-right: 0rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
